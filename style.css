@@ -1,7 +1,20 @@
 :root{
-    --cor-fundo: ;
-    --cor-principal: ;
-    --cor-decundaria: ;
-    --cor-destaque: ;
-    --cor-texto: ;
+    --cor-fundo: rgb(58, 18, 18);
+    --cor-principal: rgb(78, 43, 43);
+    --cor-decundaria: rgb(218, 202, 202);
+    --cor-destaque: rgb(46, 10, 10);
+    --cor-texto: rgb(132, 57, 57);
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-fundo)
+    display: flex;
+    justfy-content: center;
+    aling-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
 }

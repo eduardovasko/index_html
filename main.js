@@ -8,36 +8,66 @@ const perguntas = [
     {
         enunciado:"vou ser rico?",
         alternativas:[
-            "Sim",
-            "Sim, claro",
+            {
+            texto: "Sim",
+            afirmação: "afirmação",
+            },
+            {
+            texto: "Sim, claro",
+            afirmação:"afirmação",
+            },
                 ]
     },
     {
         enunciado:"complete: qual nome é indigena?",
         alternativas:[
-            "De freitas",
-            "Tuponi",
+            {
+            texto: "De freitas",
+            afirmação: "afirmação",
+            },
+            {
+            texto: "Tuponi",
+            afirmação:"afirmação",
+            },
                 ]
     },
     {
         enunciado:"cachorro ou gato?",
         alternativas:[
-            "canino",
-            "felino",
+            {
+            texto: "canino",
+            afirmação:"afirmação",
+            },
+            {
+            texto: "felino",
+            afirmação:"afirmação",
+            },
                 ]
     },
     {
         enunciado:"os profs são bons",
         alternativas:[
-            "sim",
-            "não",
+            {
+            texto: "sim",
+            afirmação:"afirmação",
+            },
+            {
+            texto: "não",
+            afirmação:"afirmação",
+            },
                 ]
     },
     {
         enunciado:"existe pos vida?",
         alternativas:[
-            "sim",
-            "não",
+            {
+            texto: "sim",
+            afirmação:"afirmação",
+            },
+            {
+            texto: "não",
+            afirmação:"afirmação",
+            },
                 ]
     },  
 ];

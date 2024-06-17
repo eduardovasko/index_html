@@ -97,6 +97,6 @@ for(constAlternativa of perguntaAtual.alternativas){
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = opcaoSelecionada.afirmacoes;
     historiaFinal = afirmacoes;
-    atual++.
+    atual++;
     mostraPergunta;
 }

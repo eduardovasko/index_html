@@ -89,3 +89,14 @@ for(constAlternativa of perguntaAtual.alternativas){
     botaoAlternativas,addEventListener("click", () => repostaSelecionada(alternativa));
     caixaAlternativas.appendChild(botaoAlternativa)
 }
+
+
+
+
+
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacoes = opcaoSelecionada.afirmacoes;
+    historiaFinal = afirmacoes;
+    atual++.
+    mostraPergunta;
+}

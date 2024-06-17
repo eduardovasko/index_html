@@ -74,6 +74,7 @@ const perguntas = [
 
 let atual =0;
 let pergunta.Atual;
+let historiaFinal;
 
 function mostraPergunta(){
     perguntaAtual = perguntas[atual]
@@ -85,5 +86,6 @@ function mostroAlternativas=document.createElemente("button");
 for(constAlternativa of perguntaAtual.alternativas){
     const botaoAlternativa=documentcreateElement("button");
     botaoAlternativa.textContent=alternativa;
+    botaoAlternativas,addEventListener("click", () => repostaSelecionada(alternativa));
     caixaAlternativas.appendChild(botaoAlternativa)
 }

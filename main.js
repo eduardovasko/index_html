@@ -72,9 +72,9 @@ const perguntas = [
     },  
 ];
 
-let atual =0;
-let pergunta.Atual;
-let historiaFinal;
+let atual = 0;
+let perguntaAtual;
+let historiaFinal="";
 
 function mostraPergunta(){
     perguntaAtual = perguntas[atual]
@@ -82,7 +82,7 @@ function mostraPergunta(){
     mostraAlternativas();
 }
 mostraPergunta();
-function mostroAlternativas=document.createElemente("button");
+function mostraAlternativas=document.createElemente("button");
 for(constAlternativa of perguntaAtual.alternativas){
     const botaoAlternativa=documentcreateElement("button");
     botaoAlternativa.textContent=alternativa;
@@ -100,3 +100,5 @@ function respostaSelecionada(opcaoSelecionada){
     atual++;
     mostraPergunta;
 }
+
+mostraPergunta();

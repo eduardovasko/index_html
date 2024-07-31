@@ -77,22 +77,23 @@ let perguntaAtual;
 let historiaFinal="";
 
 function mostraPergunta(){
+if(atual >= perguntas.length){
+    mostrarResultado();
+    return;
+}
     perguntaAtual = perguntas[atual]
     caixaPerguntas.textContent = perguntaAtual.enunciado
+    caixaAlternativas.textContent = ""
     mostraAlternativas();
 }
-mostraPergunta();
-function mostraAlternativas=document.createElemente("button");
+function mostraAlternativas() {
 for(constAlternativa of perguntaAtual.alternativas){
     const botaoAlternativa=documentcreateElement("button");
     botaoAlternativa.textContent=alternativa;
     botaoAlternativas,addEventListener("click", () => repostaSelecionada(alternativa));
     caixaAlternativas.appendChild(botaoAlternativa)
 }
-
-
-
-
+}
 
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = opcaoSelecionada.afirmacoes;
@@ -101,4 +102,10 @@ function respostaSelecionada(opcaoSelecionada){
     mostraPergunta;
 }
 
-mostraPergunta();
+function mostrarResultado(){
+    caixaPerguntas.textContent = "Esse texto é a introdução para juntar todas as afirmações das respostas..."
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent ="";
+}
+
+mostrapergunta();
